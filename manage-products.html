@@ -1,0 +1,52 @@
+HTML
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จัดการสินค้า - Shinnosuke Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Shinnosuke Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin-dashboard.html">แดชบอร์ด</a></li>
+                <li><a href="manage-users.html">จัดการผู้ใช้</a></li>
+                <li><a href="view-orders.html">ดูคำสั่งซื้อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="manage-products">
+        <h2>จัดการสินค้า</h2>
+        <button onclick="window.location.href='add-product.html'">เพิ่มสินค้าใหม่</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>ชื่อสินค้า</th>
+                    <th>จำนวน</th>
+                    <th>ราคา</th>
+                    <th>จัดการ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- รายการสินค้าจะถูกแสดงที่นี่ -->
+                <tr>
+                    <td>ไก่ตัน</td>
+                    <td>10</td>
+                    <td>100 บาท</td>
+                    <td><button>แก้ไข</button> <button>ลบ</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shinnosuke Shop</p>
+    </footer>
+</body>
+</html>

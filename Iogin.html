@@ -1,0 +1,47 @@
+HTML
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ - Shinnosuke Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Shinnosuke Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="products.html">สินค้าของเรา</a></li>
+                <li><a href="cart.html">ตะกร้าสินค้า</a></li>
+                <li><a href="login.html">เข้าสู่ระบบ</a></li>
+                <li><a href="register.html">สมัครสมาชิก</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="login">
+        <h2>เข้าสู่ระบบ</h2>
+        <form id="login-form">
+            <label for="username">ชื่อผู้ใช้:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">เข้าสู่ระบบ</button>
+        </form>
+        <p>ยังไม่มีบัญชี? <a href="register.html">สมัครสมาชิก</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shinnosuke Shop</p>
+    </footer>
+
+    <!-- เชื่อมโยงไฟล์ JavaScript -->
+    <script src="script.js"></script> <!-- เพิ่มบรรทัดนี้เพื่อเชื่อมโยง script.js -->
+</body>
+</html>

@@ -1,0 +1,44 @@
+HTML
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เติมเงิน - Shinnosuke Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Shinnosuke Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="products.html">สินค้าของเรา</a></li>
+                <li><a href="cart.html">ตะกร้าสินค้า</a></li>
+                <li><a href="login.html">เข้าสู่ระบบ</a></li>
+                <li><a href="topup.html">เติมเงิน</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="topup">
+        <h2>เติมเงิน</h2>
+        <form id="topup-form">
+            <label for="amount">จำนวนเงินที่ต้องการเติม (บาท):</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <button type="submit">สร้างซองอั่งเปา</button>
+        </form>
+
+        <div id="qr-code" style="margin-top: 20px;"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shinnosuke Shop</p>
+    </footer>
+
+    <script src="topup.js"></script>
+</body>
+</html>
